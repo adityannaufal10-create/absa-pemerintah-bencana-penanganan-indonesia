@@ -19,33 +19,33 @@ Analisis membagi evaluasi ke dalam 6 aspek utama yang divalidasi dengan *topic m
 
 | Kode | Nama Aspek | Cakupan Utama |
 | :---: | :--- | :--- |
-| **A1** | Kecepatan Respons & Evakuasi | Tim SAR, pemadaman, respon cepat, kehadiran petugas di lapangan[cite: 9]. |
-| **A2** | Bantuan, Logistik & Pemulihan | Penyaluran dan kecukupan bantuan, hunian sementara (huntara), pemulihan pascabencana[cite: 10]. |
-| **A3** | Informasi, Komunikasi & Peringatan Dini | Kejujuran laporan pejabat, kejelasan informasi, hoaks, peringatan dini[cite: 10]. |
-| **A4** | Anggaran & Transparansi | Alokasi dana bencana, korupsi, pemotongan anggaran (misal: MBG/Kopdes vs BNPB)[cite: 10]. |
-| **A5** | Koordinasi Antarlembaga & Kinerja Pejabat | Penilaian presiden, menteri, kepala BNPB, kepala daerah, koordinasi pusat-daerah[cite: 10]. |
-| **A6** | Pencegahan, Mitigasi & Penegakan Hukum | Pencegahan karhutla, alih fungsi lahan/sawit, penindakan pembakar dan korporasi[cite: 10]. |
+| **A1** | Kecepatan Respons & Evakuasi | Tim SAR, pemadaman, respon cepat, kehadiran petugas di lapangan. |
+| **A2** | Bantuan, Logistik & Pemulihan | Penyaluran dan kecukupan bantuan, hunian sementara (huntara), pemulihan pascabencana. |
+| **A3** | Informasi, Komunikasi & Peringatan Dini | Kejujuran laporan pejabat, kejelasan informasi, hoaks, peringatan dini. |
+| **A4** | Anggaran & Transparansi | Alokasi dana bencana, korupsi, pemotongan anggaran (misal: MBG/Kopdes vs BNPB). |
+| **A5** | Koordinasi Antarlembaga & Kinerja Pejabat | Penilaian presiden, menteri, kepala BNPB, kepala daerah, koordinasi pusat-daerah. |
+| **A6** | Pencegahan, Mitigasi & Penegakan Hukum | Pencegahan karhutla, alih fungsi lahan/sawit, penindakan pembakar dan korporasi. |
 
 ---
 
 ## 🛠️ Alur Kerja & Metode
 
 ### 1. Data & Anotasi
-* **Corong Seleksi:** Dari 70.579 komentar mentah disaring menjadi 1.056 populasi (kriteria K1–K7)[cite: 8].
-* **Sampel Berlabel:** 282 komentar utama (241 YouTube, 41 Instagram) dinilai oleh 3 annotator (335 baris pasangan komentar-aspek / 1.692 sel)[cite: 8].
-* **Reliabilitas Anotator:** Mencapai Fleiss' $\kappa = 0,786$ (*substantive agreement*)[cite: 14]. Deteksi aspek mencapai $\kappa = 0,837 - 0,953$[cite: 14, 15].
+* **Corong Seleksi:** Dari 70.579 komentar mentah disaring menjadi 1.056 populasi (kriteria K1–K7).
+* **Sampel Berlabel:** 282 komentar utama (241 YouTube, 41 Instagram) dinilai oleh 3 annotator (335 baris pasangan komentar-aspek / 1.692 sel).
+* **Reliabilitas Anotator:** Mencapai Fleiss' $\kappa = 0,786$ (*substantive agreement*). Deteksi aspek mencapai $\kappa = 0,837 - 0,953$.
 
 ### 2. Model yang Dibandingkan
-* **Konvensional:** TF-IDF + Logistic Regression, Linear SVM, Complement Naive Bayes[cite: 11].
-* **Deep Learning:** IndoBERT (`indobenchmark/indobert-base-p1`) dan IndoBERTweet (`indolem/indobertweet-base-uncased`)[cite: 11].
+* **Konvensional:** TF-IDF + Logistic Regression, Linear SVM, Complement Naive Bayes.
+* **Deep Learning:** IndoBERT (`indobenchmark/indobert-base-p1`) dan IndoBERTweet (`indolem/indobertweet-base-uncased`).
 
 ### 3. 5 Metode Hyperparameter Tuning
-Eksperimen menggunakan *Nested 5-Fold Cross-Validation* dengan anggaran seimbang (30 evaluasi per metode)[cite: 11, 12]:
-1. **Grid Search**[cite: 12]
-2. **Random Search**[cite: 12]
-3. **Bayesian Optimization (TPE)**[cite: 12]
-4. **Genetic Algorithm**[cite: 12]
-5. **Hybrid Grid → Bayesian (Coarse-to-Fine)**[cite: 12]
+Eksperimen menggunakan *Nested 5-Fold Cross-Validation* dengan anggaran seimbang (30 evaluasi per metode):
+1. **Grid Search**
+2. **Random Search**
+3. **Bayesian Optimization (TPE)**
+4. **Genetic Algorithm**
+5. **Hybrid Grid → Bayesian (Coarse-to-Fine)**
 
 ---
 
@@ -59,8 +59,6 @@ Eksperimen menggunakan *Nested 5-Fold Cross-Validation* dengan anggaran seimbang
 | 4 | TF-IDF + Linear SVM | Hybrid Grid → Bayesian | 0,530 | 0,426 | 0,471 ± 0,100 | 0,515 |
 | 5 | IndoBERT (multi-head) | - | 0,514 | 0,350 | 0,415 ± 0,045 | 0,479 |
 
-**
-
 ### Key Findings:
 * **Model Sederhana + Tuning vs Transformer:** Pada dataset berukuran kecil (282 sampel), model TF-IDF + Logistic Regression yang dituning mengalahkan transformer (IndoBERT/IndoBERTweet) karena parameter efektifnya jauh lebih sedikit sehingga tidak mudah *under-fit*.
 * **Hybrid Grid → Bayesian** terbukti memberikan performa terbaik secara konsisten di ketiga model konvensional.
@@ -70,7 +68,7 @@ Eksperimen menggunakan *Nested 5-Fold Cross-Validation* dengan anggaran seimbang
 
 ## 👥 Penulis / Anggota Kelompok 10
 
-Penelitian ini disusun untuk memenuhi Ujian Tengah Semester (UTS) Mata Kuliah Natural Language Processing (NLP)[cite: 5]:
+Penelitian ini disusun untuk memenuhi Ujian Tengah Semester (UTS) Mata Kuliah Natural Language Processing (NLP):
 
 * **Mikael Ardiyanta Widyadana Purniawan**
 * **Raphael Angelo Adikara Purnama**
