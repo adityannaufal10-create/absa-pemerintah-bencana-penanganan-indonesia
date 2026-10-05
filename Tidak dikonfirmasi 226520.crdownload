@@ -1,0 +1,269 @@
+"""Scraping komentar YouTube v2 via YouTube Data API v3.
+
+Alur:
+  1. Kumpulkan video: 87 video lama (seed) + hasil search per keyword peristiwa (Jan–Sep 2026),
+     disaring relevansi judul (menyebut bencana DAN penanganan/pemerintah).
+  2. Ambil semua komentar (top-level + balasan) tiap video.
+  3. Ambil subscriberCount channel tiap komentator (channels.list, 50 id/call).
+  4. Simpan komentar dari komentator dengan subscriber > 1.000 (subscriber tersembunyi dibuang).
+
+Output: scraping/data/youtube_raw_v2.csv (skema sama dengan youtube_raw.csv + author_followers)
+Jalankan: python scraping/scrape_youtube.py
+"""
+import hashlib
+import json
+import time
+from datetime import date
+
+import pandas as pd
+import requests
+
+from config import (OUT, ROOT, PROJECT, MIN_FOLLOWERS, PERIOD_START, PERIOD_END, SEARCH_QUERIES,
+                    is_relevant, assign_event, load_env)
+
+API = "https://www.googleapis.com/youtube/v3/"
+KEY = load_env()["YOUTUBE_API_KEY"]
+CACHE = OUT / "_cache_yt"
+CACHE.mkdir(exist_ok=True)
+MAX_COMMENTS_PER_VIDEO = 4000
+quota = {"used": 0, "out": False}
+
+
+class QuotaOut(Exception):
+    pass
+
+
+def call(ep, cost=1, **params):
+    params["key"] = KEY
+    r = None
+    for attempt in range(12):             # tahan gangguan jaringan ±10 menit
+        try:
+            r = requests.get(API + ep, params=params, timeout=30)
+        except requests.exceptions.RequestException:
+            time.sleep(min(2 ** attempt, 60))
+            continue
+        quota["used"] += cost
+        if r.status_code == 200:
+            return r.json()
+        err = r.json().get("error", {})
+        reason = (err.get("errors") or [{}])[0].get("reason", "")
+        if reason in ("commentsDisabled", "videoNotFound", "forbidden"):
+            return None
+        if reason in ("quotaExceeded", "dailyLimitExceeded"):
+            quota["out"] = True
+            raise QuotaOut()
+        time.sleep(2 ** attempt)
+    raise RuntimeError(f"{ep} gagal: {getattr(r, 'status_code', 'koneksi')} {getattr(r, 'text', '')[:200]}")
+
+
+def cached(name, fn):
+    p = CACHE / f"{name}.json"
+    if p.exists():
+        return json.loads(p.read_text(encoding="utf-8"))
+    data = fn()
+    p.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    return data
+
+
+# ---------------------------------------------------------------- 1. video
+def discover_uploads(top_n=8, max_pages=250):
+    """Telusuri playlist upload kanal yang paling sering memuat video relevan (1 unit/50 video, jauh
+    lebih hemat kuota daripada search). Judul disaring is_relevant() di discover_videos()."""
+    p = OUT / "youtube_videos_v2.csv"
+    if not p.exists():
+        return []
+    v = pd.read_csv(p)
+    v = v[v.relevant]
+    ids = []
+    top = v.groupby("source_account").size().sort_values(ascending=False).head(top_n).index
+    for acc in top:
+        vid = v[v.source_account == acc].source_id.iloc[0]
+        def run(vid=vid):
+            ch = call("videos", part="snippet", id=vid)["items"][0]["snippet"]["channelId"]
+            up = call("channels", part="contentDetails", id=ch)["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+            out, tok = [], None
+            for _ in range(max_pages):
+                res = call("playlistItems", part="snippet", playlistId=up, maxResults=50, pageToken=tok)
+                if res is None:
+                    break
+                for it in res.get("items", []):
+                    sn = it["snippet"]
+                    out.append(dict(id=sn["resourceId"]["videoId"], title=sn["title"], date=sn["publishedAt"]))
+                tok = res.get("nextPageToken")
+                if not tok or (out and out[-1]["date"] < PERIOD_START):
+                    break
+            return out
+        try:
+            items = cached("uploads_" + hashlib.md5(acc.encode()).hexdigest()[:10], run)
+        except QuotaOut:
+            print("  kuota habis saat menelusuri upload; lanjut dengan video yang sudah ada")
+            break
+        rel = [x["id"] for x in items if PERIOD_START <= x["date"][:10] <= PERIOD_END and is_relevant(x["title"])]
+        print(f"  uploads {acc}: {len(items)} video, {len(rel)} judul relevan (kuota ±{quota['used']})")
+        ids += rel
+    return ids
+
+
+def discover_videos():
+    old = pd.read_csv(PROJECT / "youtube_raw.csv", usecols=["source_id", "event"]).drop_duplicates("source_id")
+    seed = dict(zip(old.source_id, old.event))
+    found = {}
+    for ev, qs in SEARCH_QUERIES.items():
+        for q in qs:
+            def run(q=q):
+                ids, tok = [], None
+                for _ in range(2):   # 2 halaman x 50 = 100 video/keyword
+                    res = call("search", cost=100, part="snippet", q=q, type="video", maxResults=50,
+                               regionCode="ID", relevanceLanguage="id", order="relevance",
+                               publishedAfter=f"{PERIOD_START}T00:00:00Z",
+                               publishedBefore=f"{PERIOD_END}T23:59:59Z", pageToken=tok)
+                    ids += [it["id"]["videoId"] for it in res.get("items", [])]
+                    tok = res.get("nextPageToken")
+                    if not tok:
+                        break
+                return ids
+            for vid in cached("search_" + hashlib.md5(q.encode()).hexdigest()[:10], run):
+                found.setdefault(vid, ev)
+    for vid in discover_uploads():
+        found.setdefault(vid, None)
+    all_ids = list(dict.fromkeys(list(seed) + list(found)))
+
+    def details():
+        out = []
+        for i in range(0, len(all_ids), 50):
+            res = call("videos", part="snippet,statistics", id=",".join(all_ids[i:i + 50]))
+            for it in res.get("items", []):
+                s, st = it["snippet"], it.get("statistics", {})
+                out.append(dict(source_id=it["id"], source_title=s["title"], source_account=s["channelTitle"],
+                                source_date=s["publishedAt"], description=s.get("description", "")[:500],
+                                comment_count=int(st.get("commentCount", 0))))
+        return out
+    vids = pd.DataFrame(cached(f"video_details_{len(all_ids)}", details))
+    vids["is_seed"] = vids.source_id.isin(seed)
+    vids = vids[(vids.source_date >= PERIOD_START) & (vids.source_date <= PERIOD_END + "T23:59:59Z")]
+    vids["relevant"] = vids.is_seed | vids.source_title.map(is_relevant)
+    vids["event"] = [seed.get(v) or assign_event(t) for v, t in zip(vids.source_id, vids.source_title)]
+    vids.to_csv(OUT / "youtube_videos_v2.csv", index=False)
+    vids = vids[vids.relevant & (vids.comment_count > 0)]
+    print(f"Video: seed {int(vids.is_seed.sum())} + baru {int((~vids.is_seed).sum())} relevan; "
+          f"total komentar menurut API ±{vids.comment_count.sum():,}")
+    return vids
+
+
+# ------------------------------------------------------------- 2. komentar
+def fetch_comments(video_id):
+    def run():
+        rows, tok = [], None
+        while len(rows) < MAX_COMMENTS_PER_VIDEO:
+            res = call("commentThreads", part="snippet,replies", videoId=video_id, maxResults=100,
+                       textFormat="plainText", order="time", pageToken=tok)
+            if res is None:
+                break
+            for it in res.get("items", []):
+                top = it["snippet"]["topLevelComment"]
+                rows.append(_row(top, None))
+                n_rep = it["snippet"].get("totalReplyCount", 0)
+                reps = it.get("replies", {}).get("comments", [])
+                if n_rep > len(reps):     # balasan lengkap
+                    reps, rtok = [], None
+                    while True:
+                        rr = call("comments", part="snippet", parentId=top["id"], maxResults=100,
+                                  textFormat="plainText", pageToken=rtok)
+                        if rr is None:
+                            break
+                        reps += rr.get("items", [])
+                        rtok = rr.get("nextPageToken")
+                        if not rtok:
+                            break
+                rows += [_row(r, top["id"]) for r in reps]
+            tok = res.get("nextPageToken")
+            if not tok:
+                break
+        return rows
+    return cached(f"comments_{video_id}", run)
+
+
+def _row(c, parent):
+    s = c["snippet"]
+    return dict(comment_id=c["id"], parent_id=parent, is_reply=parent is not None,
+                channel_id=(s.get("authorChannelId") or {}).get("value"),
+                text_raw=s.get("textOriginal") or s.get("textDisplay", ""),
+                like_count=s.get("likeCount", 0), published_at=s.get("publishedAt"))
+
+
+# ----------------------------------------------------------- 3. subscriber
+def fetch_subscribers(channel_ids):
+    p = CACHE / "channel_subs.json"
+    subs = json.loads(p.read_text()) if p.exists() else {}
+    todo = [c for c in channel_ids if c and c not in subs]
+    print(f"Cek subscriber {len(todo):,} channel baru (cache {len(subs):,})")
+    for i in range(0, len(todo), 50):
+        batch = todo[i:i + 50]
+        try:
+            res = call("channels", part="statistics", id=",".join(batch), maxResults=50)
+        except QuotaOut:
+            print("Kuota habis saat cek subscriber; sisanya dianggap tidak diketahui")
+            break
+        got = {it["id"]: (None if it["statistics"].get("hiddenSubscriberCount")
+                          else int(it["statistics"].get("subscriberCount", 0)))
+               for it in res.get("items", [])}
+        for c in batch:
+            subs[c] = got.get(c)          # None = tersembunyi / channel tidak ditemukan
+        if i % 500 == 0:
+            p.write_text(json.dumps(subs))
+    p.write_text(json.dumps(subs))
+    return subs
+
+
+def main():
+    vids = discover_videos()
+    from concurrent.futures import ThreadPoolExecutor
+    vlist = list(vids.sort_values("comment_count", ascending=False).itertuples())
+    with ThreadPoolExecutor(8) as ex:
+        def safe(v):
+            if quota["out"]:
+                return []
+            try:
+                return fetch_comments(v.source_id)
+            except QuotaOut:
+                return []          # tidak di-cache; bisa diambil saat kuota reset
+        results = ex.map(safe, vlist)
+        results = list(results)
+    frames = []
+    for n, (v, rows) in enumerate(zip(vlist, results), 1):
+        df = pd.DataFrame(rows)
+        if df.empty:
+            continue
+        for col in ["source_id", "source_title", "source_account", "source_date", "event"]:
+            df[col] = getattr(v, col)
+        frames.append(df)
+        if n % 20 == 0:
+            print(f"  {n}/{len(vids)} video, kuota ±{quota['used']}")
+    com = pd.concat(frames, ignore_index=True).drop_duplicates("comment_id")
+    print(f"Komentar terkumpul: {len(com):,} dari {com.channel_id.nunique():,} channel")
+
+    subs = fetch_subscribers(com.channel_id.dropna().unique().tolist())
+    com["author_followers"] = com.channel_id.map(subs)
+    com["platform"] = "youtube"
+    com["source_url"] = "https://www.youtube.com/watch?v=" + com.source_id
+    com["scraped_at"] = date.today().isoformat()
+    com["author_hash"] = com.channel_id.fillna("").map(lambda s: hashlib.sha1(s.encode()).hexdigest()[:10])
+    com.drop(columns=["channel_id"]).to_csv(OUT / "youtube_all_v2.csv", index=False)   # sebelum filter (untuk statistik)
+
+    # semua komentar dalam periode disimpan; seleksi prioritas followers > 1.000 dilakukan di T1
+    keep = com[(com.published_at >= PERIOD_START) & (com.published_at <= PERIOD_END + "T23:59:59Z")].copy()
+    keep = keep.sort_values(["source_id", "published_at"]).reset_index(drop=True)
+    keep.insert(0, "id", [f"YT_{i:06d}" for i in range(1, len(keep) + 1)])
+    cols = ["id", "platform", "source_id", "source_url", "source_title", "source_account", "source_date", "event",
+            "scraped_at", "comment_id", "parent_id", "is_reply", "author_hash", "text_raw", "like_count",
+            "published_at", "author_followers"]
+    keep[cols].to_csv(OUT / "youtube_raw_v2.csv", index=False)
+    s = com.author_followers
+    n_ok = int((keep.author_followers > MIN_FOLLOWERS).sum())
+    print(f"Komentar dalam periode {len(keep):,}; subscriber > {MIN_FOLLOWERS}: {n_ok:,} ({n_ok/len(keep):.1%}); "
+          f"tersembunyi {s.isna().mean():.1%}; kuota terpakai ±{quota['used']}")
+    print(keep[keep.author_followers > MIN_FOLLOWERS].event.value_counts().to_string())
+
+
+if __name__ == "__main__":
+    main()

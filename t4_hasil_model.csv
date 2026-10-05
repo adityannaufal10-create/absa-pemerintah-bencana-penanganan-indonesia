@@ -1,0 +1,6 @@
+model,jenis,accuracy,macro_F1,weighted_F1,F1_negative,F1_neutral,F1_positive,param,val_macroF1,waktu_s
+IndoBERTweet,Deep learning,0.764,0.712,0.7659,0.8582,0.6,0.678,"lr2e-5, ep4, len128",0.6806,64.7
+LogReg,Konvensional,0.676,0.6136,0.678,0.7887,0.4808,0.5714,0.5,0.6308,2.1
+LinearSVM,Konvensional,0.684,0.5905,0.671,0.8026,0.4,0.569,0.3,0.5915,0.3
+NaiveBayes,Konvensional,0.672,0.5656,0.6535,0.7974,0.359,0.5405,0.01,0.5991,0.1
+BiLSTM,Deep learning,0.592,0.5197,0.6055,0.7546,0.3492,0.4554,E128-H128-drop0.4,0.6016,6.1

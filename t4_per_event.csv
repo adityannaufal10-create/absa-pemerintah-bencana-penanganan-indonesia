@@ -1,0 +1,8 @@
+event,n,macro_F1,accuracy,catatan
+karhutla_kalimantan,138,0.738,0.775,
+gempa_ntt,32,0.614,0.781,"n<100, hati-hati"
+anggaran_kebijakan,32,0.597,0.719,"n<100, hati-hati"
+erupsi,18,0.571,0.611,"n<100, hati-hati"
+lainnya,14,0.83,0.857,"n<100, hati-hati"
+umum,13,0.778,0.846,"n<100, hati-hati"
+banjir_sumatra,3,0.333,0.667,"n<100, hati-hati"

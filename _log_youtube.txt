@@ -1,0 +1,54 @@
+Video: seed 87 + baru 770 relevan; total komentar menurut API ±30,297
+  20/857 video, kuota ±0
+  40/857 video, kuota ±0
+  60/857 video, kuota ±0
+  80/857 video, kuota ±0
+  100/857 video, kuota ±0
+  120/857 video, kuota ±0
+  140/857 video, kuota ±0
+  160/857 video, kuota ±0
+  180/857 video, kuota ±0
+  200/857 video, kuota ±0
+  220/857 video, kuota ±0
+  240/857 video, kuota ±0
+  260/857 video, kuota ±0
+  280/857 video, kuota ±0
+  300/857 video, kuota ±0
+  320/857 video, kuota ±0
+  340/857 video, kuota ±0
+  360/857 video, kuota ±0
+  380/857 video, kuota ±0
+  400/857 video, kuota ±0
+  420/857 video, kuota ±0
+  440/857 video, kuota ±0
+  460/857 video, kuota ±0
+  480/857 video, kuota ±0
+  500/857 video, kuota ±0
+  520/857 video, kuota ±0
+  540/857 video, kuota ±0
+  560/857 video, kuota ±0
+  580/857 video, kuota ±0
+  600/857 video, kuota ±0
+  620/857 video, kuota ±0
+  640/857 video, kuota ±0
+  660/857 video, kuota ±0
+  680/857 video, kuota ±0
+  700/857 video, kuota ±0
+  720/857 video, kuota ±0
+  740/857 video, kuota ±0
+  760/857 video, kuota ±0
+  780/857 video, kuota ±0
+  800/857 video, kuota ±0
+  820/857 video, kuota ±0
+  840/857 video, kuota ±0
+Komentar terkumpul: 30,269 dari 23,951 channel
+Cek subscriber 1,901 channel baru (cache 22,050)
+Subscriber > 1000: 664 komentar (2.2%); tersembunyi 0.0%; kuota terpakai ±39
+event
+anggaran_kebijakan     240
+gempa_ntt              160
+karhutla_kalimantan    134
+lainnya                 46
+umum                    36
+erupsi                  30
+banjir_sumatra          18

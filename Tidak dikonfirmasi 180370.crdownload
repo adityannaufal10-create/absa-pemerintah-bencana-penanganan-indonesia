@@ -1,0 +1,130 @@
+"""Konfigurasi bersama scraping v2 (YouTube + Instagram).
+
+Revisi dosen:
+  1. Dataset final = 2.500 komentar (1.250 YouTube + 1.250 Instagram).
+  2. Hanya komentar dari akun dengan followers/subscriber > 1.000.
+"""
+import os
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent      # folder Revisi_Data_2500
+PROJECT = ROOT.parent                              # folder Project (data lama, .env)
+OUT = ROOT / "scraping" / "data"
+OUT.mkdir(parents=True, exist_ok=True)
+
+MIN_FOLLOWERS = 1000            # syarat: followers/subscriber komentator > 1.000
+TARGET_PER_PLATFORM = 1250
+PERIOD_START = "2026-01-01"
+PERIOD_END = "2026-09-30"       # komentar & konten dalam tahun anggaran berjalan (Jan–Sep 2026)
+SEED = 42
+
+
+def load_env():
+    env = {}
+    p = ROOT / ".env" if (ROOT / ".env").exists() else PROJECT / ".env"
+    for line in p.read_text(encoding="utf-8").splitlines():
+        if "=" in line and not line.strip().startswith("#"):
+            k, v = line.split("=", 1)
+            env[k.strip()] = v.strip().strip("\"'")
+    os.environ.update(env)
+    return env
+
+
+# ---------------------------------------------------------------------------
+# Keyword pencarian per peristiwa (dipakai untuk search YouTube & Instagram)
+# ---------------------------------------------------------------------------
+SEARCH_QUERIES = {
+    "gempa_ntt": [
+        "penanganan gempa NTT pemerintah", "bantuan korban gempa NTT", "gempa Flores BNPB",
+        "Prabowo tinjau gempa NTT", "pengungsi gempa Manggarai", "gempa NTT bantuan belum sampai",
+    ],
+    "karhutla_kalimantan": [
+        "karhutla Kalimantan pemerintah", "penanganan kebakaran hutan Kalimantan 2026",
+        "Prabowo tinjau karhutla", "kabut asap Kalimantan BNPB", "status bencana nasional karhutla",
+    ],
+    "erupsi": [
+        "erupsi Anak Krakatau penanganan", "Anak Krakatau BNPB", "abu vulkanik Anak Krakatau pemerintah",
+    ],
+    "banjir_sumatra": [
+        "banjir Sumatra penanganan pemerintah", "huntara korban banjir Aceh", "banjir bandang Aceh bantuan pemerintah",
+        "pemulihan pascabencana Sumatra",
+    ],
+    "anggaran_kebijakan": [
+        "anggaran BNPB dipangkas", "anggaran bencana MBG", "status bencana nasional Prabowo",
+        "anggaran penanggulangan bencana 2026",
+    ],
+    "lainnya": ["longsor Cisarua evakuasi", "penanganan longsor pemerintah 2026"],
+    "umum": ["penanganan bencana pemerintah 2026", "kinerja BNPB 2026"],
+}
+
+IG_HASHTAGS = [
+    "gempantt", "gempaflores", "gempamanggarai", "karhutla", "karhutlakalimantan", "kabutasap",
+    "anakkrakatau", "erupsianakkrakatau", "banjirsumatra", "banjiraceh", "bnpb", "anggaranbnpb",
+    "statusbencananasional", "longsorcisarua", "penanggulanganbencana",
+]
+# akun yang dominan pada data IG lama (unggahan dicek ulang relevansinya lewat caption)
+IG_ACCOUNTS = [
+    "bnpb_indonesia", "kemenhut", "bakom.ri", "kaltengpedia", "inilah_com", "kompascom", "metrotv",
+    "kemenko_pmk", "birosuararakyat", "jawaposkalteng", "narasinewsroom", "cnnindonesia", "tempodotco",
+]
+
+# ---------------------------------------------------------------------------
+# Relevansi konten: judul/caption harus menyebut bencana DAN penanganan/pemerintah
+# ---------------------------------------------------------------------------
+RE_DISASTER = re.compile(
+    r"\bgempa(?!r)|karhutla|kebakaran hutan|kebakaran lahan|kabut asap|\berupsi|krakatau|vulkanik|banjir|longsor|"
+    r"galodo|bencana|pengungsi|huntara|huntap|tsunami|mitigasi|\bbnpb|\bbpbd|puting beliung|kekeringan|titik api|hotspot|"
+    r"manggala agni|pemadaman (api|kebakaran|karhutla|hutan|lahan)", re.I)
+RE_HANDLING = re.compile(
+    r"pemerintah|presiden|prabowo|gibran|wapres|menteri|mentan|mendagri|menhut|kemenhut|bnpb|bpbd|basarnas|"
+    r"gubernur|bupati|pemda|pemkab|pemprov|dedi mulyadi|kdm|\btni\b|polri|polda|kodam|\bsar\b|anggaran|apbn|mbg|"
+    r"bantuan|penanganan|tangani|evakuasi|tinjau|kunjung|status bencana|huntara|huntap|pemulihan|rekonstruksi|"
+    r"relokasi|logistik|salurkan|distribusi|\bdpr\b|puan|kebijakan|instruksi|posko|satgas|damkar|pemadam|negara",
+    re.I)
+# bencana luar negeri (kecuali dibandingkan dengan Indonesia) dan peristiwa non-bencana alam
+RE_FOREIGN = re.compile(
+    r"nepal|colombia|kolombia|venezuela|myanmar|thailand|filipina|jepang|japan|turki|taiwan|tiongkok|\bchina\b|"
+    r"\bindia\b|pakistan|afghanistan|maroko|amerika|\bas\b|rusia|ukraina|gaza|palestina|israel|iran|meksiko|"
+    r"chile|vanuatu|malaysia|korea|hawaii|kanada|eropa", re.I)
+RE_INDONESIA = re.compile(
+    r"indonesia|\bri\b|prabowo|gibran|bnpb|bpbd|ntt|flores|aceh|sumatra|sumatera|kalimantan|jawa|jakarta|sulawesi|"
+    r"papua|bali|lombok|krakatau|kemenhut|basarnas|dpr", re.I)
+RE_NONDISASTER = re.compile(r"listrik|\bpln\b|jalan hancur|jalan rusak|kecelakaan|kapal .*tenggelam|kapal virgo|keracunan|tentara bayaran|penipuan|pinjol|judi", re.I)
+
+
+# pemakaian kiasan / topik lain yang kebetulan memuat kata bencana -> selalu dibuang
+RE_FALSE_FRIEND = re.compile(
+    r"banjir (dikomentar|komentar|kritik|hujatan|pujian|pesanan|order)|dibanjiri|mitigasi (gelombang )?phk|"
+    r"tanpa mitigasi|rawan korupsi|islam ala|nadiem", re.I)
+
+
+def is_relevant(text: str) -> bool:
+    t = text or ""
+    if RE_FALSE_FRIEND.search(t):
+        return False
+    if not (RE_DISASTER.search(t) and RE_HANDLING.search(t)):
+        return False
+    if RE_FOREIGN.search(t) and not RE_INDONESIA.search(t):
+        return False
+    if RE_NONDISASTER.search(t) and not re.search(r"bencana|gempa|banjir|karhutla|erupsi|longsor|tsunami", t, re.I):
+        return False
+    return True
+
+
+EVENT_RULES = [   # urutan penting: yang lebih spesifik dulu
+    ("anggaran_kebijakan", r"anggaran|apbn|\bmbg\b|makan bergizi|status bencana nasional|dipangkas|efisiensi"),
+    ("gempa_ntt", r"gempa.*(ntt|flores|manggarai|nagekeo|ende|sikka|kupang)|(ntt|flores|manggarai|nagekeo).*gempa|gempantt|gempaflores"),
+    ("karhutla_kalimantan", r"karhutla|kebakaran hutan|kebakaran lahan|kabut asap|asap|manggala agni|pemadam.*hutan"),
+    ("erupsi", r"\berupsi|krakatau|vulkanik|gunung api|meletus|letusan"),
+    ("banjir_sumatra", r"banjir.*(sumatra|sumatera|aceh|sumut|sumbar|tapanuli|tapsel|tamiang|garoga)|(sumatra|sumatera|aceh).*(banjir|bencana|huntara|huntap)|banjirsumatra|banjiraceh"),
+    ("lainnya", r"longsor|banjir|puting beliung|cisarua|tsunami"),
+]
+
+
+def assign_event(text: str) -> str:
+    t = (text or "").lower()
+    for ev, pat in EVENT_RULES:
+        if re.search(pat, t):
+            return ev
+    return "umum"

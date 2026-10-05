@@ -1,0 +1,212 @@
+  uploads METRO TV : 12500 video, 1291 judul relevan (kuota ±0)
+  uploads tvOneNews : 12500 video, 818 judul relevan (kuota ±0)
+  uploads KOMPASTV: 12500 video, 810 judul relevan (kuota ±0)
+  uploads BeritaSatu: 12500 video, 458 judul relevan (kuota ±0)
+  uploads Official iNews: 12500 video, 444 judul relevan (kuota ±252)
+  uploads CNN Indonesia: 12500 video, 361 judul relevan (kuota ±504)
+  uploads SINDOnews: 12500 video, 437 judul relevan (kuota ±756)
+  uploads Tribunnews: 12500 video, 671 judul relevan (kuota ±1008)
+Video: seed 87 + baru 3758 relevan; total komentar menurut API ±98,244
+  20/3845 video, kuota ±4726
+  40/3845 video, kuota ±4726
+  60/3845 video, kuota ±4726
+  80/3845 video, kuota ±4726
+  100/3845 video, kuota ±4726
+  120/3845 video, kuota ±4726
+  140/3845 video, kuota ±4726
+  160/3845 video, kuota ±4726
+  180/3845 video, kuota ±4726
+  200/3845 video, kuota ±4726
+  220/3845 video, kuota ±4726
+  240/3845 video, kuota ±4726
+  260/3845 video, kuota ±4726
+  280/3845 video, kuota ±4726
+  300/3845 video, kuota ±4726
+  320/3845 video, kuota ±4726
+  340/3845 video, kuota ±4726
+  360/3845 video, kuota ±4726
+  380/3845 video, kuota ±4726
+  400/3845 video, kuota ±4726
+  420/3845 video, kuota ±4726
+  440/3845 video, kuota ±4726
+  460/3845 video, kuota ±4726
+  480/3845 video, kuota ±4726
+  500/3845 video, kuota ±4726
+  520/3845 video, kuota ±4726
+  540/3845 video, kuota ±4726
+  560/3845 video, kuota ±4726
+  580/3845 video, kuota ±4726
+  600/3845 video, kuota ±4726
+  620/3845 video, kuota ±4726
+  640/3845 video, kuota ±4726
+  660/3845 video, kuota ±4726
+  680/3845 video, kuota ±4726
+  700/3845 video, kuota ±4726
+  720/3845 video, kuota ±4726
+  740/3845 video, kuota ±4726
+  760/3845 video, kuota ±4726
+  780/3845 video, kuota ±4726
+  800/3845 video, kuota ±4726
+  820/3845 video, kuota ±4726
+  840/3845 video, kuota ±4726
+  860/3845 video, kuota ±4726
+  880/3845 video, kuota ±4726
+  900/3845 video, kuota ±4726
+  920/3845 video, kuota ±4726
+  940/3845 video, kuota ±4726
+  960/3845 video, kuota ±4726
+  980/3845 video, kuota ±4726
+  1000/3845 video, kuota ±4726
+  1020/3845 video, kuota ±4726
+  1040/3845 video, kuota ±4726
+  1060/3845 video, kuota ±4726
+  1080/3845 video, kuota ±4726
+  1100/3845 video, kuota ±4726
+  1120/3845 video, kuota ±4726
+  1140/3845 video, kuota ±4726
+  1160/3845 video, kuota ±4726
+  1180/3845 video, kuota ±4726
+  1200/3845 video, kuota ±4726
+  1220/3845 video, kuota ±4726
+  1240/3845 video, kuota ±4726
+  1260/3845 video, kuota ±4726
+  1280/3845 video, kuota ±4726
+  1300/3845 video, kuota ±4726
+  1320/3845 video, kuota ±4726
+  1340/3845 video, kuota ±4726
+  1360/3845 video, kuota ±4726
+  1380/3845 video, kuota ±4726
+  1400/3845 video, kuota ±4726
+  1420/3845 video, kuota ±4726
+  1440/3845 video, kuota ±4726
+  1460/3845 video, kuota ±4726
+  1480/3845 video, kuota ±4726
+  1500/3845 video, kuota ±4726
+  1520/3845 video, kuota ±4726
+  1540/3845 video, kuota ±4726
+  1560/3845 video, kuota ±4726
+  1580/3845 video, kuota ±4726
+  1600/3845 video, kuota ±4726
+  1620/3845 video, kuota ±4726
+  1640/3845 video, kuota ±4726
+  1660/3845 video, kuota ±4726
+  1680/3845 video, kuota ±4726
+  1700/3845 video, kuota ±4726
+  1720/3845 video, kuota ±4726
+  1740/3845 video, kuota ±4726
+  1760/3845 video, kuota ±4726
+  1780/3845 video, kuota ±4726
+  1800/3845 video, kuota ±4726
+  1820/3845 video, kuota ±4726
+  1840/3845 video, kuota ±4726
+  1860/3845 video, kuota ±4726
+  1880/3845 video, kuota ±4726
+  1900/3845 video, kuota ±4726
+  1920/3845 video, kuota ±4726
+  1940/3845 video, kuota ±4726
+  1960/3845 video, kuota ±4726
+  1980/3845 video, kuota ±4726
+  2000/3845 video, kuota ±4726
+  2020/3845 video, kuota ±4726
+  2040/3845 video, kuota ±4726
+  2060/3845 video, kuota ±4726
+  2080/3845 video, kuota ±4726
+  2100/3845 video, kuota ±4726
+  2120/3845 video, kuota ±4726
+  2140/3845 video, kuota ±4726
+  2160/3845 video, kuota ±4726
+  2180/3845 video, kuota ±4726
+  2200/3845 video, kuota ±4726
+  2220/3845 video, kuota ±4726
+  2240/3845 video, kuota ±4726
+  2260/3845 video, kuota ±4726
+  2280/3845 video, kuota ±4726
+  2300/3845 video, kuota ±4726
+  2320/3845 video, kuota ±4726
+  2340/3845 video, kuota ±4726
+  2360/3845 video, kuota ±4726
+  2380/3845 video, kuota ±4726
+  2400/3845 video, kuota ±4726
+  2420/3845 video, kuota ±4726
+  2440/3845 video, kuota ±4726
+  2460/3845 video, kuota ±4726
+  2480/3845 video, kuota ±4726
+  2500/3845 video, kuota ±4726
+  2520/3845 video, kuota ±4726
+  2540/3845 video, kuota ±4726
+  2560/3845 video, kuota ±4726
+  2580/3845 video, kuota ±4726
+  2600/3845 video, kuota ±4726
+  2620/3845 video, kuota ±4726
+  2640/3845 video, kuota ±4726
+  2660/3845 video, kuota ±4726
+  2680/3845 video, kuota ±4726
+  2700/3845 video, kuota ±4726
+  2720/3845 video, kuota ±4726
+  2740/3845 video, kuota ±4726
+  2760/3845 video, kuota ±4726
+  2780/3845 video, kuota ±4726
+  2800/3845 video, kuota ±4726
+  2820/3845 video, kuota ±4726
+  2840/3845 video, kuota ±4726
+  2860/3845 video, kuota ±4726
+  2880/3845 video, kuota ±4726
+  2900/3845 video, kuota ±4726
+  2920/3845 video, kuota ±4726
+  2940/3845 video, kuota ±4726
+  2960/3845 video, kuota ±4726
+  2980/3845 video, kuota ±4726
+  3000/3845 video, kuota ±4726
+  3020/3845 video, kuota ±4726
+  3040/3845 video, kuota ±4726
+  3060/3845 video, kuota ±4726
+  3080/3845 video, kuota ±4726
+  3100/3845 video, kuota ±4726
+  3120/3845 video, kuota ±4726
+  3140/3845 video, kuota ±4726
+  3160/3845 video, kuota ±4726
+  3180/3845 video, kuota ±4726
+  3200/3845 video, kuota ±4726
+  3220/3845 video, kuota ±4726
+  3240/3845 video, kuota ±4726
+  3260/3845 video, kuota ±4726
+  3280/3845 video, kuota ±4726
+  3300/3845 video, kuota ±4726
+  3320/3845 video, kuota ±4726
+  3340/3845 video, kuota ±4726
+  3360/3845 video, kuota ±4726
+  3380/3845 video, kuota ±4726
+  3400/3845 video, kuota ±4726
+  3420/3845 video, kuota ±4726
+  3440/3845 video, kuota ±4726
+  3460/3845 video, kuota ±4726
+  3480/3845 video, kuota ±4726
+  3500/3845 video, kuota ±4726
+  3520/3845 video, kuota ±4726
+  3540/3845 video, kuota ±4726
+  3560/3845 video, kuota ±4726
+  3580/3845 video, kuota ±4726
+  3600/3845 video, kuota ±4726
+  3620/3845 video, kuota ±4726
+  3640/3845 video, kuota ±4726
+  3660/3845 video, kuota ±4726
+  3680/3845 video, kuota ±4726
+  3700/3845 video, kuota ±4726
+  3720/3845 video, kuota ±4726
+  3740/3845 video, kuota ±4726
+  3760/3845 video, kuota ±4726
+  3780/3845 video, kuota ±4726
+  3800/3845 video, kuota ±4726
+  3820/3845 video, kuota ±4726
+  3840/3845 video, kuota ±4726
+Komentar terkumpul: 97,866 dari 67,217 channel
+Cek subscriber 43,266 channel baru (cache 23,951)
+Komentar dalam periode 97,866; subscriber > 1000: 1,752 (1.8%); tersembunyi 0.0%; kuota terpakai ±5592
+event
+karhutla_kalimantan    412
+anggaran_kebijakan     408
+umum                   369
+gempa_ntt              287
+erupsi                 158
+lainnya                 92
+banjir_sumatra          26

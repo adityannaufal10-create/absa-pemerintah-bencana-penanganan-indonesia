@@ -1,0 +1,275 @@
+id,platform,event,text_raw,label_vote,agreement,pred_NaiveBayes,pred_LogReg,pred_LinearSVM,pred_BiLSTM,pred_IndoBERTweet
+YT_000003,youtube,karhutla_kalimantan,"Waterboom kan air nya geratis, klo ubibomboombing biayanya besar",positive,2,negative,neutral,neutral,neutral,neutral
+YT_000109,youtube,anggaran_kebijakan,"Bayangkan kalau pas covid, dia presidennya...",negative,2,negative,negative,negative,negative,negative
+YT_000737,youtube,karhutla_kalimantan,Langkah cepat dan tegas sangat dibutuhkan dalam menghadapi karhutla. Semoga penanganannya berjalan efektif dan masyarakat serta lingkungan segera terlindungi. 🙏🇮🇩,positive,3,positive,positive,positive,positive,positive
+YT_001107,youtube,karhutla_kalimantan,"Gercep banget, Semoga penanganan karhutla di Kalimantan bisa segera teratasi dan titik api lekas padam.",positive,2,neutral,neutral,neutral,neutral,positive
+YT_001140,youtube,karhutla_kalimantan,"Negara hadir. Semoga membawa solusi cepat untuk padamkan api
+Hormat! Langsung cek kondisi, bukan cuma di belakang meja 👏🇮🇩",positive,2,neutral,neutral,neutral,positive,positive
+YT_002353,youtube,gempa_ntt,"Saya Tanya, Banyak Gak Tahunya",neutral,2,negative,negative,negative,neutral,negative
+YT_002686,youtube,karhutla_kalimantan,Kalian cuma di bohongi pemerintah.  Di segel... Ni kuping ku. Potong kalo di segel beneran 😂😂😂😂😂,negative,3,negative,negative,negative,negative,negative
+YT_002688,youtube,karhutla_kalimantan,"Paling untuk lahan sawit,, pemerintah mana berani segel terang2an, paling2 hanya sandiwara aja,,",negative,2,negative,positive,negative,neutral,negative
+YT_002926,youtube,karhutla_kalimantan,"SATU PERSATU MEREKA AKAN MERASAKANNYA, GAK PEDULI NAGA SEKALIPUN ✍🏻",positive,1,positive,negative,negative,negative,negative
+YT_003207,youtube,karhutla_kalimantan,Kan dia mafian nya,negative,2,negative,negative,negative,neutral,negative
+YT_003425,youtube,erupsi,Berita malam..kok br siar skrg,negative,2,negative,negative,negative,negative,neutral
+YT_003428,youtube,erupsi,"Banjir aceh aja ga becus diatasi, apalagi Gunung krakatau. Hahahahahha",negative,2,negative,negative,negative,negative,negative
+YT_003479,youtube,karhutla_kalimantan,Pompa bor sumur .pake pasir pake garem .  Pompa air sati titik sumur .satelit sumur bor...,neutral,1,neutral,neutral,neutral,neutral,neutral
+YT_003739,youtube,gempa_ntt,"​@cuterawr_beebaca lagi di bilang rakyat ,,bisa baca kan ?",neutral,2,negative,negative,negative,neutral,negative
+YT_003832,youtube,gempa_ntt,Mintalah bantuan ke wiwi kan banyak pendukung wiwi disana,positive,2,positive,positive,positive,neutral,neutral
+YT_005622,youtube,gempa_ntt,Terima Kasih kang Dedi Mulyadi....semoga Tuhan sll melindungi bapak...sehat selalu yah pak,positive,3,positive,positive,positive,positive,positive
+YT_006552,youtube,karhutla_kalimantan,"Sorri ye sorri. Lahan sawit itu di jaga secara kompak oleh relawan dan masyarakat desa. Justru api itu datang dari hutan desa, hutan adat dan kawasan hutan gunung palong. Terkhusus daerah saya desa padu Banjar kecamatan Simpang hilir kabupaten kayong utara provinsi Kalimantan Barat",positive,2,neutral,positive,neutral,neutral,positive
+YT_006858,youtube,anggaran_kebijakan,Rayap besinya ora umum pung😂,negative,2,negative,neutral,negative,neutral,negative
+YT_007072,youtube,anggaran_kebijakan,"Jangan ragu bos... sudah direalisasikan,, makanya sering nonton berita jangan cuma drama tiktok dll... walaupun tidak pro pemerintah, sekali kali nonton juga saluran pemerintah biar bisa bandingkan/disesuaikan dengan berita lain.",positive,2,negative,negative,negative,negative,negative
+YT_008171,youtube,karhutla_kalimantan,"rezim gemuk doang..sdh bnyak kerugian akibat karhutla br di bahas, bencana tahunan tdk ada mitigasi. silahkan rakyat menilai kinerja rezim paling gemuk ini",negative,3,negative,negative,negative,negative,negative
+YT_008426,youtube,karhutla_kalimantan,Ini sih harus nya alat berat yg turun 😢,neutral,2,negative,negative,negative,negative,negative
+YT_008845,youtube,umum,Hidup BEM UI setuju masiswa UI kami rakyat mendukung mu,positive,2,positive,positive,positive,positive,positive
+YT_008929,youtube,umum,"mahasiswa lol 🤣, pertlet untuk rakyat bwh , yg protes pra prtamax. rata2 masyarat pke pertalet untuk kalangna bawah. hebat dong pke pertamax 🤣🤣. yg gk msuk akal itu bahan2 naik...apkah beli bahan pke prtmax ..!!!",negative,2,negative,negative,negative,negative,negative
+YT_009357,youtube,gempa_ntt,​@BroZ-g7j gue tau kok GANJAR PRANOWO ini adalah CAPRES yang kemarin waktu pemilu 2024 kalah...😂😂 nah Kan Dia Ancang ancang sekarang CARMUK CARMUK PANSOS PANSOS buat NYALON lgi di 2029😂😂😂 hayoooo... pas Tahun Kemarin Waktu BENCANA ALAM BANJIR BANDANG di SUMATERA sama ACEH gue gak liat tuhhh GANJAR PRANOWO otw ke SUMATERA sama ACEH...😂😂😂,negative,3,negative,negative,negative,negative,negative
+YT_010634,youtube,gempa_ntt,KDM bikin jengkel kepala daerah LAIN 😂,negative,3,negative,negative,negative,negative,negative
+YT_012065,youtube,gempa_ntt,"PENDAPAT YANG SALAH:Gempa bumi bencana yang terjadi sekarang hukuman dari Allah.FAKTA:Gempa bumi tidak pandang bulu.Orang baik maupun orang jahat bisa menjadi korbannya secara fisik,emosi dan ekonomi.Mereka sebenarnya HANYA KEBETULAN ada disitu pada waktu GEMPA BUMI,bencana terjadi.",negative,3,negative,negative,negative,negative,negative
+YT_012071,youtube,gempa_ntt,Pak tolong pimpin prov. Lampung sampai 2030 saja. Bisa gk tuker tambah dg gubenur kami wahai warga jabar? Sampe 2030 aja gk lama🙏🙏🙏,positive,2,positive,negative,negative,negative,neutral
+YT_012107,youtube,gempa_ntt,Cuma butuh waktu 14 menit sumbangan terkumpul 4 miliar bukan APBD... ini sih bukan gubernur... yesss KDM the next presiden,negative,2,negative,negative,negative,negative,negative
+YT_012374,youtube,gempa_ntt,Makanya kdm tarik tangannya wkt mau dicium krn beliau gurunya,positive,2,negative,negative,negative,negative,neutral
+YT_014306,youtube,anggaran_kebijakan,"sudah ga beres, kelamaan kalau nunggu sampai 2029 🤮",negative,3,negative,negative,negative,negative,negative
+YT_014689,youtube,anggaran_kebijakan,"Rakyat indo itu paling kocak,, Prabowo Gibran pilihannya sendiri,, tapi sering diprotes sendiri,, emang rata2 termul itu otaknya konslet,,,😁😆🤓🤭",negative,3,negative,negative,negative,negative,negative
+YT_014797,youtube,anggaran_kebijakan,Pakai aja anggaran. MBG yang 1.2 T per hari. Hentikan mbg dan kopdes. Donasi pale lu😂😂,negative,3,negative,neutral,neutral,neutral,negative
+YT_015342,youtube,anggaran_kebijakan,TERNYATA INI YANG DIPERJUANGKAN PARA BUZER POLITIK.... BEGINILAH HASILNYA 😂😂😂😂,negative,3,negative,negative,negative,positive,positive
+YT_015565,youtube,anggaran_kebijakan,Presiden Prabowo lupa minum obat,negative,2,negative,negative,negative,neutral,neutral
+YT_015604,youtube,anggaran_kebijakan,Apakah prabowo masih layak dipertahankan memimpin negri ini?,negative,2,negative,negative,negative,negative,neutral
+YT_015776,youtube,anggaran_kebijakan,Sudahlah bang. Dia kan memang bukan presiden yang baik. Siapa sih yang milih dia nih 😅😅😅,negative,3,negative,negative,negative,negative,negative
+YT_015918,youtube,anggaran_kebijakan,Terimaksih bung FA,positive,3,positive,positive,positive,neutral,positive
+YT_018233,youtube,gempa_ntt,Semangat prajurit kesehatan semoga lancar dalam pelaksanaan tugas di NTT,positive,2,positive,positive,positive,positive,positive
+YT_020888,youtube,karhutla_kalimantan,langsung dong kerahkan tni nya pak bawa pesawat pengangkut air,neutral,2,negative,positive,positive,positive,neutral
+YT_021707,youtube,lainnya,apa disini hutan nya juga sudah GUNDUL kah??...,negative,1,negative,negative,negative,negative,negative
+YT_021910,youtube,banjir_sumatra,Kamu udh ada usaha apa buat negara 😂😂bisa a cuman mangap kan,negative,2,negative,negative,negative,negative,negative
+YT_022101,youtube,karhutla_kalimantan,Indok indok.  Lumayan dapat duit lagi.  Emang kirik indok ini,positive,2,negative,negative,negative,negative,positive
+YT_022634,youtube,anggaran_kebijakan,"bravo pak browo... bravoo 👏🥳pak prabowo berhasil menjadi contoh asli seperti apa pemimpin zalim itu, semua spesifikasi buat jadi pemimpin zalim di libas habis sama beliau 🔥🔥🔥Pemimpin yang berlaku zalim menanggung dosa yang amat besar karena menyalahgunakan kekuasaan untuk menipu, menindas, atau merugikan rakyatnya🔥Haram Masuk Surga, Azab yang Pedih, Siksa di Neraka sudah menanti 🔥🔥🔥",negative,3,negative,negative,negative,negative,negative
+YT_022724,youtube,anggaran_kebijakan,"Sebenarnya, Prabsky itu dendam sama rakyat cz dibuat kalah 2x di pilpres",negative,3,negative,negative,negative,negative,negative
+YT_022803,youtube,anggaran_kebijakan,Yahhh politik lagi deh bahasnya 😢... Gk papa dah,negative,2,negative,negative,negative,negative,negative
+YT_022826,youtube,anggaran_kebijakan,kenapa baraya ga cek sendiri jembatan macam apa yang di bangun? gugling baraya.,neutral,2,neutral,neutral,neutral,negative,negative
+YT_023056,youtube,anggaran_kebijakan,"MBG KOPDES PROGRAM TER GBLOK..
+
+REZIM WOWO REZIM TERKUTUK, TERDONGO, TERBODOH, TERBATU SEPANJANG SEJARAH KONOHA",negative,3,negative,negative,positive,negative,negative
+YT_023137,youtube,anggaran_kebijakan,*DEMI MBG /MAKANAN BERACUN GRATIS.. SMUA DIHALALKAN MSKI HARAM... BORO2 mau dngr kritikan rakyat 😫Tuhan aja ga TAKUT* 🤷‍♀️😱😰😰,positive,2,negative,negative,negative,negative,negative
+YT_023248,youtube,anggaran_kebijakan,"sblm ada sawit kita ga oernah kesulitan minyak goreng. ya kan? coba diingat ingat
+
+kita ga mnta 100 persen bnar. kita mnta perbaikan",positive,2,negative,negative,positive,neutral,negative
+YT_023320,youtube,anggaran_kebijakan,Si wowo kan udah bikin buku islam ala pak wowo 😂😂😂,neutral,2,neutral,neutral,negative,negative,neutral
+YT_023599,youtube,anggaran_kebijakan,"Cukup 1 periode saja lah,,,,,",neutral,2,positive,positive,positive,negative,neutral
+YT_023700,youtube,anggaran_kebijakan,"gaji sih biasa saja, tunjangan tuh yang luar biasa, bahkan setelah 5 tahun dinas digaji sampai ke liang lahat",negative,2,negative,negative,negative,negative,positive
+YT_023987,youtube,anggaran_kebijakan,Apakah bisa mempidanakan presiden???,negative,1,negative,negative,negative,neutral,neutral
+YT_024276,youtube,anggaran_kebijakan,"Bagaimana ketika sebelum.pemilu, pilpres kemarin????",neutral,3,negative,neutral,neutral,neutral,neutral
+YT_024424,youtube,anggaran_kebijakan,"Kira2 Presiden nonton vidio kaya gini gak sih..?
+Minimal ada yg ngasih tau kek🤔",neutral,1,negative,negative,negative,negative,neutral
+YT_024643,youtube,anggaran_kebijakan,"Jangan pakai AI dong thumbnail nya, kayak biasa aja guru, terlihat ciri khasnya",negative,2,negative,negative,negative,negative,negative
+YT_024921,youtube,anggaran_kebijakan,3Tahun selanjuty cobaan tambah berat  semoga indo gk tambh ancur,negative,2,negative,positive,positive,neutral,negative
+YT_025683,youtube,anggaran_kebijakan,Siapa yang pilih dia dulu sekarang sadar apa belum pak wowo itu perusak,negative,3,negative,negative,negative,negative,negative
+YT_025973,youtube,anggaran_kebijakan,​@gurugembulbahkan anggaran inspektorat Daerah di potong,neutral,2,negative,negative,negative,neutral,neutral
+YT_025989,youtube,anggaran_kebijakan,"​@ahmadanas739khan dia dah bilang pas kampanye, beberapa tahun belakangan bisnis gue mandek..
+itu sdh jadi sinyal, akan seperti apa negara ini akan dibawa jika jadi presiden.",negative,2,negative,negative,negative,negative,negative
+YT_026055,youtube,anggaran_kebijakan,Presiden semau gue..,negative,1,negative,negative,negative,neutral,negative
+YT_026343,youtube,anggaran_kebijakan,ga cukup apa ngebunuh rakyat terus buset dah kata emakk bapak gw mah..,negative,3,negative,negative,negative,negative,negative
+YT_027775,youtube,gempa_ntt,Bencana tidak memilih lokasi. Pesisir maupun wilayah pegunungan sama-sama terpukul dan butuh penanganan cepat. Seharusnya fokus pemerintah adalah memastikan bantuan sampai ke SELURUH korban tanpa ada yang terlewat bukan malah fokus ke titik lokasi tertentu.,negative,2,negative,negative,negative,negative,negative
+YT_028725,youtube,lainnya,"Semoga warga yang terdampak musibah segera mendapat pertolongan, tetap semangat, semoga segera pulih",positive,2,positive,positive,positive,positive,positive
+YT_029201,youtube,karhutla_kalimantan,Bismillah sekedar mengingatkan barang kali lupa. Jgn lupa kumandang kan ADZAN ketika memadamkan api... semoga lekas padam bibarkati lafadz adzan dengan rahmatAlloh.aamiin,positive,3,positive,positive,positive,negative,positive
+YT_030190,youtube,gempa_ntt,Trima kasih Pak wapres Gibran dan mahasiswa UI,positive,3,positive,positive,positive,positive,positive
+YT_030478,youtube,karhutla_kalimantan,"Gubernur kalian kemana , sampai semua di biayai in sendiri",negative,2,neutral,neutral,neutral,negative,negative
+YT_030508,youtube,erupsi,"kalian liat aja deh,, semua daerh itu adalah daerh perkebunan sawit semua. apakah cuma kebetulan?",negative,2,negative,neutral,negative,negative,negative
+YT_031430,youtube,gempa_ntt,"Jika abang di posisi mereka pasti akan melakukan hal yang sama. 
+
+Proses penyaluran bantuan Gempa NTT terkesan hanya fokus ke titik tertentu saja. 
+
+Jujur hingga hari ini, hari ke enam setelah gempa, desa saya belum sama sekali tersentuh bantuan.",positive,2,negative,negative,negative,positive,negative
+YT_032234,youtube,karhutla_kalimantan,"Siap siap makanan dari tapioka naik , cilok jd 5k satu butir 😂",positive,3,negative,negative,negative,neutral,neutral
+YT_032940,youtube,gempa_ntt,Bantuan aja di korupsi .....parah abis,negative,3,negative,negative,negative,negative,negative
+YT_033434,youtube,umum,"Semuanya sejak Sri Mulyani Indrawati di demo masyarakat, Krn market eksternal mempunyai persepsi bahwa pemerintah tidak akan membuat kebijakan yang market friendly",neutral,1,negative,negative,negative,negative,negative
+YT_033576,youtube,umum,"Yo gak mungkin sekelas Pemerintah gak ada mistigasi Resiko... jangan diskusi hanya untuk sekedar terlihat paling pinter...di dunia nyata gak cukup hanya teori saja...
+
+Baru naik 3 ribu aja berisik..
+98 itu dri 2,5 rb - 15 rb aja bangsa ini mampu menjalaninya",negative,2,negative,negative,negative,negative,negative
+YT_033599,youtube,umum,Saya yakin fery itu agen.. Karena tebar ketakutan aja taunya terus menerus....pikir dia sendiri yg pintar??? Emang seumur hidup dia bekerja sebagai makro mikro expert atau hanya penulis dikoran doang??,negative,2,negative,negative,negative,negative,negative
+YT_033804,youtube,erupsi,"itu suara anak karakatu, berdasarkan yg sudah sudah",neutral,2,neutral,neutral,neutral,negative,neutral
+YT_034289,youtube,erupsi,"Ngapain di cari nyusahin aja, siapa suruh dia nantangin anak krakatau. Yg ada nanti basarnas ikut banyak korban.",negative,3,negative,negative,negative,neutral,negative
+YT_035076,youtube,karhutla_kalimantan,klo sawit yg sdh ditanami tsb gk dimusnahkan ya sama saja bohong 😅,negative,2,negative,negative,negative,neutral,negative
+YT_035715,youtube,karhutla_kalimantan,"Udah di setting ini mah, ujung""nya jdi SAWIT semua itu lahan",negative,2,neutral,neutral,neutral,negative,negative
+YT_036038,youtube,karhutla_kalimantan,"Izin Pak Sekedar Saran 🙏
+Jangan Hanya Mesin Pompa Dan Selangnya Saja Tapi Juga Titik Air Yg Harus Tersedia, Mungkin Titik"" Sumur Bor.. Dan Juga Masker Yg Aman Buat Petugas Yg Di Lapangan Untuk Menutupi Wajah, Mata Dan Pernafasan Dengan Aman. Agar Terhindar Dari Panasnya Api, Mata Tidak Pedas Dan Bernafas Tetap Aman Tanpa Gangguan Asap.
+Juga Di Perlukan Anggaran Untuk Unit Mobil Tank Damkar Dan Mobil Tangki Air Dan Juga Personil Damkar Seluruh Indonesia",positive,1,negative,negative,negative,negative,positive
+YT_036830,youtube,karhutla_kalimantan,Saya percaya ucapan Gusdur.Prabowo tulus pada bangsa ini.meski belum ada perubahan besar pada bangsa ini.,positive,1,negative,negative,negative,negative,positive
+YT_038454,youtube,erupsi,Sama Skali gak panik wo..yg bikin panaik itu pemerintah yg gak becus urus negara dan bermain politik pembodohan rakyat..gunung meletus itu udh hulum alam terima dan berserah diri sama ALLAH mahakuasa,negative,2,negative,negative,negative,negative,negative
+YT_039526,youtube,umum,"Semoga kejadian di muka bumi ada hikmah,pembelajaran bagi kita",positive,2,positive,positive,positive,neutral,positive
+YT_039576,youtube,umum,"PASTI JURUS ""OMON-OMON... 😢😢",negative,1,negative,neutral,negative,negative,neutral
+YT_040069,youtube,karhutla_kalimantan,"Astaga selang aja kurang, amatiran bgt ya penanganannya. Anggaran2 yg urgen bgni kecil sekali sedangkn yg lain yg gak penting besar",negative,2,negative,negative,negative,negative,negative
+YT_041217,youtube,gempa_ntt,Ini kok malah wapresnya yang tanggap lah presidennya kok belum dulu jaman Pak Jokowi bencana beliau langsung hadir,negative,3,negative,negative,negative,negative,negative
+YT_041343,youtube,karhutla_kalimantan,Dan jad iriana pak.solo.bgmna mau direkrut unesco klo trs pelanggarn ham pak,positive,2,negative,neutral,negative,positive,negative
+YT_041767,youtube,umum,"Pak bikin sumur 150,00000,JT mikir Napa KASAD, apa kasud,, mentang mentang, presiden, duit ga ada seri nya ,  buat gaji guru ga ada duit,",negative,3,negative,negative,negative,negative,negative
+YT_042615,youtube,gempa_ntt,Bukanya pasukan Anak Abah yang otaknya kosong isinya TAI KEBANYAKAN NYEDOT PANTAT ANIS IMIGRAN IBLIS PKI YAMAN,negative,3,negative,negative,negative,negative,negative
+YT_042619,youtube,gempa_ntt,ANIS ITU SAMPAH IBLIS PKI YAMAN,negative,3,negative,negative,negative,negative,negative
+YT_042844,youtube,banjir_sumatra,Akibat pemerintah tidak gerak cepat menimbulkan nama buruk bagi pemerintah jelas ini menjadi tamparan keras bagi pemerintah karena tidak bisa menanggulangi lebih cepat dari warga disana.,negative,3,negative,negative,negative,negative,negative
+YT_043326,youtube,karhutla_kalimantan,Akhinya Gusti Alloh Maha Besar. lsg padam dlm hitungan detik,positive,3,negative,positive,positive,positive,positive
+YT_043423,youtube,karhutla_kalimantan,Alhamdulillah ya Allah akhirnya ada hujan Kalimantan ❤,positive,3,positive,positive,positive,positive,positive
+YT_047733,youtube,anggaran_kebijakan,Gak jelas banget omon2 nya...,negative,2,negative,negative,negative,negative,negative
+YT_047865,youtube,karhutla_kalimantan,Lagian presiden lebih percaya sama pejabat.nya sajah dan tidak mendengarkan rakyat dan lapangan...wkwkwkwk,negative,1,negative,negative,negative,negative,negative
+YT_048676,youtube,karhutla_kalimantan,Laporan asal bapak senang. Rakyat harus protes dan tegas ini menyengsarakan rakyat,negative,3,positive,positive,positive,positive,negative
+YT_050616,youtube,karhutla_kalimantan,"Dalam konsep prabowonomic korporasi atau oligarki hitam assetnya diambil alih negara, kita akan lihat nantinya",neutral,2,negative,negative,negative,negative,neutral
+YT_050900,youtube,erupsi,Aneh katanya indonesia udah canggih ehh malah video orang yg diambil.drone negara mana yg canggih itu,negative,2,negative,negative,negative,negative,negative
+YT_051996,youtube,lainnya,"Mungkin kita sama pak supir,punya dendam sama ladusing",negative,1,negative,neutral,negative,negative,negative
+YT_052009,youtube,lainnya,"Truk TNI tinggi dan ada moncongnya dan stir kiri pulak menghalangi pandangan supir, spd motor tidak terlihat..apalagi bila sedang tidak konsen..",negative,3,negative,negative,negative,negative,negative
+YT_052668,youtube,karhutla_kalimantan,Bisnis bisnis bisnis,positive,2,negative,neutral,negative,neutral,neutral
+YT_053243,youtube,gempa_ntt,Itu adalah tanda,neutral,2,neutral,neutral,neutral,neutral,neutral
+YT_054447,youtube,umum,"Tah kuduna para pemimpin Nagara Konoha teh anu serehat  ,sehat lahir ,sehat batin , sehat hate Jeung pikirana",positive,3,positive,positive,positive,positive,positive
+YT_058827,youtube,gempa_ntt,"Kalo b*ntuan ke Palestina berton-ton dan bergerak cepat..
+Giliran di rakyat di negeri sendiri tutup mata.
+
+Tuhan ampunilah pemimpin negara ini",negative,2,negative,negative,negative,negative,negative
+YT_059357,youtube,karhutla_kalimantan,"Sini pak,mudik ke hulu lagi",neutral,2,neutral,neutral,neutral,neutral,neutral
+YT_059372,youtube,karhutla_kalimantan,Jgn dulu bang datengnya nanti aja kl mau pilpres 2029,neutral,1,negative,negative,negative,negative,neutral
+YT_059774,youtube,gempa_ntt,"Aku adalah saksi  kesombongan pemerintah saat ini, nanti di yaumul hisab",negative,2,negative,negative,negative,negative,negative
+YT_059813,youtube,gempa_ntt,"boleh nolak tp penuhi kebutuhan korban tepat waktu & banyakkkk jgn dikorup dong   ...keterlaluan tega sm rakyat sendiri..
+ampunnnnn !!!",negative,2,negative,negative,negative,negative,negative
+YT_060476,youtube,gempa_ntt,"PARAH,,,KENAPA SETELAH RAMAI DI MEDSOS BARU MAU TURUN,,,,,,",negative,3,negative,negative,negative,negative,negative
+YT_060972,youtube,gempa_ntt,Kirim dia ke palestina biar tau rasa bersyukur,positive,2,negative,positive,positive,neutral,neutral
+YT_061320,youtube,gempa_ntt,bersyukurlah ada bantuan walau nominalnya dikit..,positive,2,negative,positive,positive,neutral,positive
+YT_061322,youtube,gempa_ntt,"Gak usah di bantu,modar Yo biarin aja,bantuan bukan hanya satu kali mungkin ada yg lain.",negative,2,negative,negative,negative,negative,negative
+YT_061383,youtube,gempa_ntt,Untuk apa kasihan sama orang seperti ini.. Saya saja dulu pernah susah bisanya juga makan mie dan itu harus beli.. Dia hanya tinggal makan malah menyia nyiakan makanan... Apa anda tidak pernah kelaparan?,negative,2,negative,negative,negative,negative,negative
+YT_061614,youtube,erupsi,kayak gitu dipakai negara,negative,2,negative,negative,negative,negative,neutral
+YT_062850,youtube,gempa_ntt,"Bicara secukupnya aja pak.
+Makin banyak Yg Keluar Dari mulut kau,, semakin bertambah bencana di Indonesia.",negative,3,negative,negative,negative,negative,negative
+YT_063097,youtube,karhutla_kalimantan,​@SbasSebaskarna wowo sendiri salah satunya,neutral,2,negative,negative,negative,negative,neutral
+YT_064302,youtube,karhutla_kalimantan,gimana ceritanya tepung singkong bisa memadamkan api heran ilmu darimana,negative,2,negative,negative,negative,neutral,negative
+YT_065202,youtube,erupsi,"Kenapa tidak dilakukan untuk iran, vietnam dan taliban juga Palestina kalau benar??? Kan pernyataan tolol itu",negative,3,negative,negative,negative,negative,negative
+YT_065818,youtube,lainnya,"Ini baru pemimpin, bukan nunjuk2 aer 😂",negative,2,negative,negative,negative,negative,negative
+YT_066419,youtube,karhutla_kalimantan,Emang ada provinsi Jambi?,neutral,2,negative,neutral,neutral,neutral,neutral
+YT_066577,youtube,karhutla_kalimantan,Kayak beneran kerja aja,positive,2,negative,negative,negative,negative,positive
+YT_067144,youtube,lainnya,Padang itu di hutan nya banyak penambangan liar jadi klo musim hujan sudah pasti banjir,positive,2,negative,negative,negative,negative,negative
+YT_067526,youtube,umum,@Zudipodcast_7 👍👍👍pak presiden maju terus pantang mundur jos,positive,1,positive,positive,positive,positive,positive
+IGX_000034,instagram,karhutla_kalimantan,agar tidak sia sia mari kita tanam sawit by prabs,positive,2,neutral,neutral,negative,negative,positive
+IGX_000062,instagram,karhutla_kalimantan,ngurusi weteng kabeh mas dadi normal,negative,2,negative,neutral,negative,neutral,positive
+IGX_000075,instagram,karhutla_kalimantan,presiden itu sangat mudah dikibulin pembantu nya,positive,3,negative,positive,positive,positive,negative
+IGX_000127,instagram,karhutla_kalimantan,kepemimpinan terburuk dalam sejarah indo,negative,2,negative,negative,negative,neutral,negative
+IGX_000133,instagram,karhutla_kalimantan,memang susah ikan busuk dari kepala apalagi kaki tangan badan nya,negative,3,negative,negative,negative,negative,negative
+IGX_000211,instagram,karhutla_kalimantan,normal ko kan memang normalnya pejabat itu rusak,negative,3,negative,negative,negative,negative,negative
+IGX_000235,instagram,karhutla_kalimantan,pemimpin ok bos di pikirannya yang penting jalan keluar,positive,3,negative,negative,negative,negative,positive
+IGX_000259,instagram,karhutla_kalimantan,coba jelaskan dengan bahasa bayi ke bapak itu spy dia mengerti jangan cuma dapat laporan dapat laporan,negative,2,negative,negative,negative,neutral,negative
+IGX_000270,instagram,karhutla_kalimantan,ya normal orang mau buat sawit normalnya gt jadi inget kalah 2x si pres sujud2 di tolol2in anak buah ternyata real nya gini,negative,3,negative,negative,negative,negative,negative
+IGX_000275,instagram,karhutla_kalimantan,fixs tangan jahanam mreka,negative,2,negative,neutral,negative,neutral,negative
+IGX_000284,instagram,karhutla_kalimantan,inilah bukti kita tidak punya presiden,negative,2,negative,negative,negative,negative,negative
+IGX_000317,instagram,karhutla_kalimantan,normal ndaslo mon,negative,1,negative,neutral,negative,neutral,negative
+IGX_000392,instagram,karhutla_kalimantan,dibohongin dengan laporan palsu mulu ya,negative,2,negative,negative,negative,neutral,negative
+IGX_000423,instagram,karhutla_kalimantan,kalau mau buat laporan itu harus sesuai dengan faktanya,neutral,1,negative,neutral,negative,negative,negative
+IGX_000531,instagram,banjir_sumatra,jadi bukan karena isu pembukaan lahan yaa,positive,2,neutral,neutral,neutral,neutral,neutral
+IGX_000587,instagram,karhutla_kalimantan,tlg trn btl2 jangan cmn dapat lapora saya mendapat lapora miris liatnya pak org2 disekitar bapak penjilat smw dulu sblm pemilihan saya kami menaro harapan besar pada bapak saat terpilih jdi presiden tapi smw nonsen hnya orang sekitar bapak aja yang merasakan,negative,2,negative,negative,negative,negative,negative
+IGX_000591,instagram,karhutla_kalimantan,mereka lg sibuk mencari muka untuk selanjutnya menjilat,negative,2,negative,negative,negative,neutral,negative
+IGX_000627,instagram,karhutla_kalimantan,api padam terbitlah sawit,negative,2,negative,negative,negative,neutral,neutral
+IGX_000635,instagram,karhutla_kalimantan,الل ه م إ ن ي أ ع و ذ ب ك م ن إ م ار ة الص ب ي ان و الس ف ه اء allahumma inni a udzubika min imaarotisshibyaan was sufahaa artinya ya allah sungguh kami berlindung kepada mu dari pemimpin yang kekanak kanakan dan dari pemimpin yang bodoh ini adalah doa dari abu hurairah radhiyallahu anhu disebutkan oleh imam al bukhari dalam al adab al mufrad no,negative,2,positive,positive,negative,negative,negative
+IGX_000697,instagram,karhutla_kalimantan,sudah lah jadi sawit ituu,neutral,2,neutral,neutral,neutral,negative,neutral
+IGX_000717,instagram,karhutla_kalimantan,tinggal ditanami sawit untungnya bs buat danai mbg,neutral,1,positive,neutral,positive,neutral,neutral
+IGX_000720,instagram,karhutla_kalimantan,sudah siap lahan bt tanam sawit,positive,2,neutral,neutral,neutral,neutral,neutral
+IGX_000722,instagram,karhutla_kalimantan,loh trus salahnya dimana kan bagi mereka itu normal,negative,3,negative,negative,negative,neutral,negative
+IGX_000725,instagram,karhutla_kalimantan,pemerintahan tobat dahh neraka panas lohh,negative,2,negative,negative,negative,negative,negative
+IGX_000812,instagram,karhutla_kalimantan,normal kode sawit siap tancap gitu memang binatang,positive,2,negative,neutral,negative,neutral,negative
+IGX_000823,instagram,karhutla_kalimantan,tolol ko di pelihara normal dari mana separah itu,negative,3,negative,negative,negative,negative,negative
+IGX_000824,instagram,karhutla_kalimantan,berdampak tidak yah sama iklim kalau puluhan bahkan ratusan hektar hutan terbakar,negative,2,negative,negative,negative,negative,negative
+IG_000029,instagram,erupsi,4 BENCANA ALAM AND STILL NO STATUS DARURAT NASIONAL,negative,2,neutral,neutral,neutral,neutral,neutral
+IG_000031,instagram,erupsi,saya masi bertanya tanya kenapa di bandung dentuman kedengaran di jakarta tidak,negative,2,negative,negative,negative,neutral,neutral
+IG_000036,instagram,erupsi,bgo amat ciii coba info yg update dong dsr tll,neutral,2,neutral,neutral,neutral,neutral,neutral
+IG_000040,instagram,erupsi,Semoga segera membaik 👏,positive,2,positive,positive,positive,neutral,positive
+IG_000048,instagram,erupsi,"Saling mengingatkan dan selalu waspada, Demi kita semua",neutral,3,positive,neutral,neutral,positive,positive
+IG_000051,instagram,erupsi,Selalu update dan tetap waspada..,neutral,2,positive,neutral,positive,positive,positive
+IG_000092,instagram,erupsi,Prabowo Gibran Bencana Terbesar bagi Indo.,negative,3,positive,positive,positive,negative,negative
+IG_000111,instagram,erupsi,Semoga lekas membaik,positive,2,positive,positive,positive,positive,positive
+IG_000208,instagram,gempa_ntt,semangat mb dini,positive,3,neutral,positive,positive,neutral,positive
+IG_000341,instagram,umum,Salah! Bencana bisa diprediksi dan dipersiapkan sistem menekan dampak bencana dan respon mitigasi yang cepat. Ngerti gak sih 🔥,negative,2,negative,negative,negative,negative,negative
+IG_000345,instagram,umum,Cek rell sy unboxing yg versi jepang,neutral,2,neutral,neutral,neutral,neutral,neutral
+IG_000388,instagram,karhutla_kalimantan,"Berjalan normal ya pak? Asbun banget, sekolah aja uda daring hampir sebulan, penyakit ispa meningkat, banyak penerbangan cancel dan delay, gitu dibilang normal?",positive,2,negative,negative,negative,positive,negative
+IG_000422,instagram,karhutla_kalimantan,Normal ah AQI nya 2000+ doang... ucap seseorang yang gak pernah turun ke lapangan secara langsung😂,negative,2,negative,negative,negative,negative,negative
+IG_000554,instagram,erupsi,Stay safe semua.. Tetap waspada dan himbau untuk keluarga kesayangan kita agar terus pakai masker / protokol yg di arahkan,neutral,1,positive,positive,positive,positive,positive
+IG_000623,instagram,gempa_ntt,tandanya kalian kurang tanggap 😂,negative,2,neutral,neutral,neutral,negative,negative
+IG_000626,instagram,gempa_ntt,"pak sy disana, di pota dan reok, tenda perawatan darurat nya sangat panas pak, sangattt sangatttt sangat dan tdk ada kipas angis/ ac sesuai standart, sy rasa infus aja mendidih itu, dan kalau malam suhu nya sangat dingin.
+coba lah utk kelapangan langsung dan cek kondisi lapangan lagi pak…smua itu “baik” kalau ada pejabat aja, bgtu tdk ada kunjungan beda smua pakkk…🙌",negative,2,negative,negative,negative,negative,negative
+IG_000632,instagram,gempa_ntt,"Kita juga ngga bodoh2 banget pak. Masa 94 org karena diabetes & stroke?, KOBISA SERENTAK",negative,1,negative,negative,negative,negative,negative
+IG_000643,instagram,umum,Terima kasih infonya min🙌,positive,2,positive,positive,positive,neutral,positive
+IG_000664,instagram,karhutla_kalimantan,"Ga cuma soal api, kualitas udaranya juga harus terus diperhatiin. Kasihan juga kalau masyarakat harus beraktivitas di tengah asap terus-terusan",negative,1,positive,positive,positive,negative,negative
+IG_000678,instagram,karhutla_kalimantan,Mudah-mudahan info posko ini juga benar-benar dimanfaatkan kalau ada warga yang menemukan titik api,neutral,1,positive,positive,positive,positive,positive
+IG_000702,instagram,karhutla_kalimantan,Apresiasi setinggi-tingginya untuk para pahlawan lingkungan di lapangan.,positive,3,positive,positive,positive,positive,positive
+IG_000743,instagram,karhutla_kalimantan,Semoga diberi kemudahan dalam setiap tahap pemadaman.,positive,2,positive,positive,positive,positive,positive
+IG_000748,instagram,karhutla_kalimantan,Sehat selalu manggala agni,positive,3,positive,positive,positive,positive,positive
+IG_000757,instagram,karhutla_kalimantan,"Perasaan kalah pilpres dah, ngapa kutipannya dipake terus sih 😏",negative,3,negative,negative,negative,neutral,negative
+IG_000778,instagram,karhutla_kalimantan,Gubernur pilihan kau nah @dimasalbhkhri_16,negative,1,neutral,neutral,negative,negative,positive
+IG_000788,instagram,karhutla_kalimantan,Bahasa2 bginian apa dipelajari wkt retreat ya?,neutral,1,negative,positive,positive,neutral,neutral
+IG_000823,instagram,karhutla_kalimantan,sabaaar.. jepangnya belum sampai ke sumsel...,positive,2,positive,negative,negative,neutral,negative
+IG_000834,instagram,karhutla_kalimantan,Udah Tua Bangka tapi pola pikirnya kaya Bayi umur 3 tahun.,negative,2,negative,negative,negative,negative,negative
+IG_000842,instagram,karhutla_kalimantan,Bener memang harus dijakuan royalti ini mah buat pak @aniesbaswedan,negative,2,negative,negative,negative,positive,positive
+IG_000890,instagram,karhutla_kalimantan,Pa ko tega sih bilang nya KALIMANTAN NORMAL SEPERTI BIASA NYA😢 SEBENARNYA KAMI NIH tersiksa jua hidup dlm lingkungan asap tp kayapa pang lagi Mun KD beraktivitas kami kdd menghasilkan apa apa😢.,negative,2,negative,negative,negative,negative,negative
+IG_000897,instagram,karhutla_kalimantan,"Anjing mana ngerti bg, penting ngejilat ke tuannya",negative,2,negative,negative,negative,negative,negative
+IG_000914,instagram,karhutla_kalimantan,Kok bisa si ini bapa jadi kepala BNPB?,negative,1,neutral,neutral,neutral,negative,neutral
+IG_000939,instagram,karhutla_kalimantan,"Lo bisa kerja gk , laporan kok di buat”, asal presiden senang",positive,2,negative,negative,negative,negative,positive
+IG_000952,instagram,karhutla_kalimantan,gileee bencana estetik 🔥,negative,3,negative,negative,negative,negative,negative
+IG_000953,instagram,karhutla_kalimantan,JILAT TERUS BIAR NAIK GAJI😂,negative,3,negative,negative,negative,negative,negative
+IG_000959,instagram,karhutla_kalimantan,Anak babi ini anjing emosi dengar beritanya,negative,2,negative,negative,negative,neutral,negative
+IG_000990,instagram,karhutla_kalimantan,Sehat sehat kalian para garda terdepan karhutla 🙌,positive,3,positive,positive,positive,positive,positive
+IG_001047,instagram,karhutla_kalimantan,Mudah-mudahan hari ini ga nambah titik baru lagi. Asapnya jangan sampai makin ke mana-mana deh,negative,2,negative,negative,negative,negative,negative
+IG_001054,instagram,karhutla_kalimantan,Semoga besok-besok kabarnya malah titik api makin berkurang ya,positive,2,neutral,neutral,neutral,neutral,neutral
+IG_001085,instagram,karhutla_kalimantan,Semoga kondisi di Kalteng segera membaik,positive,2,positive,positive,positive,neutral,positive
+IG_001087,instagram,karhutla_kalimantan,Semoga kondisi Palembang dan wilayah Sumsel segera membaik.,neutral,1,neutral,neutral,neutral,neutral,positive
+IG_001177,instagram,karhutla_kalimantan,Setiap guyuran water bombing sangat berharga bagi tim darat.,positive,2,positive,positive,positive,neutral,positive
+IG_001203,instagram,lainnya,Sedih klo ada bencana soalnya prsidennya masih pak wowo 🥹,negative,3,negative,negative,negative,negative,negative
+IG_001227,instagram,lainnya,"Musim panas kebakaran, musim ujan banjir.. kalo pemerintah ga bs jaga hutan ya begini jadinya..",negative,2,positive,positive,positive,negative,negative
+IG_001236,instagram,lainnya,Masih bisa senyum kah yg banggain sawit?,positive,2,positive,positive,positive,neutral,positive
+IG_001246,instagram,lainnya,@masell1689 gali lubang Tutup Lubang= tidak ada untung eksploitasi alam Berlebihan,negative,3,positive,negative,negative,negative,negative
+IG_001302,instagram,karhutla_kalimantan,YANTO JAHANAM ANJING !!!!,negative,3,negative,neutral,negative,neutral,negative
+IG_001310,instagram,karhutla_kalimantan,Cuma 2 hari disini bilang kami hidup normal.. ga normal tau kalau bernafas itu pakai masker,negative,2,negative,negative,negative,negative,negative
+IG_001314,instagram,karhutla_kalimantan,"Pak kami guru2 pada kena ISPA tolong pa tolong, kami gak baik2 saja",negative,2,negative,negative,positive,negative,negative
+IG_001315,instagram,karhutla_kalimantan,"Waw cukup pa madamkan 7 pesawat, hari ini aja kami sesak nafas",negative,2,negative,negative,negative,negative,negative
+IG_001337,instagram,karhutla_kalimantan,"Banyak2 makan uang haram pak, kasih makan anak istrimu pake itu",negative,3,negative,negative,neutral,neutral,negative
+IG_001386,instagram,karhutla_kalimantan,Goblok jangan keterlaluan lah pak!,negative,2,negative,negative,negative,negative,negative
+IG_001420,instagram,lainnya,Tinggal di cek saja ke hulu...,negative,2,neutral,neutral,neutral,neutral,neutral
+IG_001421,instagram,lainnya,@anisbaswedan apakah Anda sudah tahu musibah ini ? Ayo duluan sebelum pemerintah datang jangan lupa foto foto,negative,2,negative,negative,negative,negative,negative
+IG_001497,instagram,lainnya,@pangabferdi yg ada penebangan kayu/tambang klw solok.,neutral,2,negative,negative,negative,negative,neutral
+IG_001532,instagram,lainnya,John pandu ketar ketir 😁😅,neutral,2,neutral,neutral,negative,neutral,neutral
+IG_001575,instagram,karhutla_kalimantan,Semoga lekas membaik indonesia dann Tetap jaga kesehatan ya seluruh tim yang telah berpartisipasi,neutral,1,positive,positive,positive,positive,positive
+IG_001593,instagram,karhutla_kalimantan,Penanganan karhutla makin taktis,neutral,2,neutral,neutral,neutral,neutral,neutral
+IG_001601,instagram,karhutla_kalimantan,Operasi udara yang cukup besar menunjukkan penanganan terus diperkuat,neutral,2,positive,positive,positive,positive,positive
+IG_001640,instagram,karhutla_kalimantan,Apresiasi setinggi-tingginya untuk seluruh petugas di lapangan,positive,2,positive,positive,positive,neutral,positive
+IG_001669,instagram,karhutla_kalimantan,Terima kasih atas update kondisi karhutla hari ini😍😍,positive,2,positive,neutral,positive,positive,neutral
+IG_001683,instagram,karhutla_kalimantan,Semoga nggak ada perluasan titik api baru di wilayah lainnya 🍃,negative,2,neutral,neutral,neutral,neutral,neutral
+IG_001700,instagram,karhutla_kalimantan,Salut untuk koordinasi lintas lembaga yang terus dilakukan,positive,2,negative,negative,negative,neutral,positive
+IG_001730,instagram,karhutla_kalimantan,"Yang penting sekarang api terkendali, asap berkurang, warga aman",positive,2,positive,positive,positive,neutral,positive
+IG_001763,instagram,karhutla_kalimantan,Apresiasi besar untuk langkah cepat dan koordinasi yang makin baik ini.,positive,3,neutral,neutral,neutral,positive,positive
+IG_001787,instagram,karhutla_kalimantan,Penindakan cepat di titik panas sangat membantu mencegah dampak yang lebih luas.,positive,2,positive,positive,positive,positive,positive
+IG_001823,instagram,karhutla_kalimantan,Apa orang perokok bisa ikut tersangka.?,negative,3,negative,negative,negative,negative,negative
+IG_001838,instagram,karhutla_kalimantan,Ketua lo musti tes psikologi sih,neutral,3,negative,negative,negative,negative,neutral
+IG_001886,instagram,karhutla_kalimantan,"pak kami beraktifitas normal krn harus kerja paaaak, bukan krn ga terganggu",positive,2,negative,negative,negative,negative,negative
+IG_001889,instagram,karhutla_kalimantan,PRETT PAK PRETTT,neutral,2,negative,neutral,negative,neutral,negative
+IG_001922,instagram,karhutla_kalimantan,"Ela jajuan hdk matei ikey nahasanggg buka mata , mata bakarahhhhh😭",negative,3,negative,negative,negative,negative,negative
+IG_001924,instagram,karhutla_kalimantan,"@ali_sunarno pantesan aja presiden adem ayem, karna hasil laporannya bilang yg baik2 terus, ternyata yg gak normal tu yg ngasih laporan, sakit emang",negative,3,negative,negative,negative,negative,negative
+IG_001953,instagram,karhutla_kalimantan,Saya dapat laporan,neutral,2,neutral,neutral,neutral,neutral,neutral
+IG_001956,instagram,karhutla_kalimantan,@chepi2709 Miris banget jadi Warga Konoha ini.. 😢,negative,3,negative,negative,negative,positive,negative
+IG_001966,instagram,karhutla_kalimantan,@ridhooe_ Kan semua kang cebok praewowo,negative,2,negative,negative,negative,neutral,neutral
+IG_001975,instagram,karhutla_kalimantan,"Normal dri mana begoo, susah nafass woyyy",negative,3,negative,negative,negative,neutral,negative
+IG_001985,instagram,karhutla_kalimantan,@dailypontianak mereke sedengnye normal min...,neutral,2,negative,neutral,negative,neutral,neutral
+IG_001988,instagram,karhutla_kalimantan,"AQI Kalimantan di level berbahaya keadaan masih NORMAL ya, Pak?",neutral,1,negative,neutral,positive,neutral,neutral
+IG_002066,instagram,karhutla_kalimantan,Nirempati. Setan aja minder sm kelakuannya,negative,2,negative,negative,negative,negative,negative
+IG_002085,instagram,karhutla_kalimantan,"Laah berjalan normal tidak ada yg terganggu katanya😂, jelas banget lah terganggu! Survey darimana itu kami ga terganggu😮",negative,2,negative,negative,negative,negative,negative
+IG_002106,instagram,karhutla_kalimantan,@bnpb_indonesia nggak ada yg namanya kehidupan normal di tengah kabut asap. Itu terpaksa dilakukan msyarakat Kalimantan demi terus bertahan hidup @prabowo,negative,3,negative,negative,negative,negative,negative
+IG_002114,instagram,karhutla_kalimantan,"“Normal pala bapak kau” 
+- 
+Warga Kalimantan",neutral,2,negative,negative,negative,neutral,neutral
+IG_002142,instagram,karhutla_kalimantan,"@lolli_pop5478 iya nih logikanya gak dipake, antara emg normal dgn terpaksa terbiasa karna keadaan gak bisa dibedain sama bapaknya. Laporannya jg gak pake data misal aspek kesehatan masyarakat",negative,2,negative,negative,negative,negative,negative
+IG_002146,instagram,karhutla_kalimantan,Itu laporan sipenjilat. Makanya wowo dpt laporannya ga pernah valid.,negative,2,neutral,neutral,neutral,negative,negative
+IG_002160,instagram,karhutla_kalimantan,"😢😢😢 bayi, balita, anak” gimna keadaan mereka 😭",neutral,2,positive,neutral,negative,positive,neutral
+IG_002180,instagram,karhutla_kalimantan,nevada_swivvez maksudnya??kamu tinggal di daerah mana??,neutral,2,neutral,neutral,neutral,neutral,neutral
+IG_002229,instagram,karhutla_kalimantan,@anakjugamanusia betulll kalau gak ya gak dpt makan,negative,2,negative,negative,negative,negative,negative
+IG_002266,instagram,karhutla_kalimantan,Matemunu bawakhai sila,neutral,2,negative,neutral,neutral,neutral,neutral
+IG_002269,instagram,karhutla_kalimantan,@sawanganupdate wkwkkww alhamdulillah mimin bukan kaum jadi jadian😂,negative,1,positive,positive,positive,positive,positive
+IG_002281,instagram,karhutla_kalimantan,Dipaksa normal. Bukan berarti nomal!,negative,3,negative,negative,negative,negative,negative
+IG_002291,instagram,karhutla_kalimantan,"@matsumoto_mels_indueberlin iye te kak rise tutu aku, uluh maka pehe takuluk, sakit mata segala sesak nafas",negative,3,negative,negative,negative,negative,negative
+IG_002308,instagram,karhutla_kalimantan,@eyk_momfelikamala pehe kaa😭😢 KTU ikei bersurat laku WFH ka..mdahan tau tembus,positive,1,neutral,neutral,neutral,neutral,neutral
+IG_002332,instagram,karhutla_kalimantan,@noorlianawaty kasih paham mereka,positive,2,negative,neutral,negative,neutral,negative
+IG_002404,instagram,karhutla_kalimantan,Normal pala bapak kau,negative,1,negative,negative,negative,neutral,negative
+IG_002408,instagram,karhutla_kalimantan,"Normal ape die, Banyak bayi masok Rumah saket, Orang ni keluar Cari Nafkah yak, Kalau tk keluar mane nak carik duet, Bukan karne org keluar itu tu normal, Dobale",negative,3,negative,negative,negative,negative,negative
+IG_002455,instagram,karhutla_kalimantan,@agus_pratamaa Keburu diangkat Saber,negative,2,negative,neutral,negative,neutral,negative
+IG_002460,instagram,karhutla_kalimantan,Inikah disebut normal pak???,negative,1,neutral,neutral,neutral,neutral,neutral
+IG_002481,instagram,karhutla_kalimantan,"Pulang sana, gak guna!",negative,3,negative,negative,negative,negative,negative
+IG_002485,instagram,karhutla_kalimantan,Otaknya di pake dit  asli tolol mintak  ampun,negative,2,negative,negative,negative,negative,negative
+IG_002486,instagram,karhutla_kalimantan,Dng mudah bilang normal kami sdh 3 bulan ini makin parah asap kalo ngkk berjalan aktifitas mau makan apa,negative,1,negative,negative,negative,negative,negative
+IG_002519,instagram,karhutla_kalimantan,@ridhanie_rama 1x dusta selama nya akan dusta terus bang. Kalau hujan gimana bang ada kah disana?,negative,3,negative,neutral,negative,negative,negative

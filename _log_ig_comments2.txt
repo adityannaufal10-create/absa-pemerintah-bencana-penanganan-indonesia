@@ -1,0 +1,9 @@
+  datadoping~instagram-comments-and-replies-scraper: SUCCEEDED, 232 item, $0.352
+  batch 1: 232 item, terpakai tahap ini $0.35
+  datadoping~instagram-comments-and-replies-scraper: SUCCEEDED, 410 item, $0.618
+  batch 2: 410 item, terpakai tahap ini $0.97
+  datadoping~instagram-comments-and-replies-scraper: SUCCEEDED, 495 item, $0.728
+  batch 3: 495 item, terpakai tahap ini $1.70
+  datadoping~instagram-comments-and-replies-scraper: SUCCEEDED, 392 item, $0.608
+  batch 4: 392 item, terpakai tahap ini $2.31
+Stop: anggaran tahap komentar $3.5 tercapai (terpakai $2.31)

@@ -1,0 +1,4 @@
+  uploads METRO TV : 12500 video, 1291 judul relevan (kuota ±252)
+  uploads tvOneNews : 12500 video, 818 judul relevan (kuota ±504)
+  uploads KOMPASTV: 12500 video, 810 judul relevan (kuota ±756)
+  uploads BeritaSatu: 12500 video, 458 judul relevan (kuota ±1008)
