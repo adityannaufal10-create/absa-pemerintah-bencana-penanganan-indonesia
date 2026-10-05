@@ -59,12 +59,12 @@ Eksperimen menggunakan *Nested 5-Fold Cross-Validation* dengan anggaran seimbang
 | 4 | TF-IDF + Linear SVM | Hybrid Grid → Bayesian | 0,530 | 0,426 | 0,471 ± 0,100 | 0,515 |
 | 5 | IndoBERT (multi-head) | - | 0,514 | 0,350 | 0,415 ± 0,045 | 0,479 |
 
-*[cite: 18, 19]*
+**
 
 ### Key Findings:
-* **Model Sederhana + Tuning vs Transformer:** Pada dataset berukuran kecil (282 sampel), model TF-IDF + Logistic Regression yang dituning mengalahkan transformer (IndoBERT/IndoBERTweet) karena parameter efektifnya jauh lebih sedikit sehingga tidak mudah *under-fit*[cite: 25].
-* **Hybrid Grid → Bayesian** terbukti memberikan performa terbaik secara konsisten di ketiga model konvensional[cite: 18, 25].
-* **Persentase Sentimen Negatif Publik:** Tingkat ketidakpuasan masyarakat paling tinggi berada pada aspek **Anggaran & Transparansi (92,7% negatif)**, **Informasi & Peringatan Dini (88,5% negatif)**, serta **Kinerja Pejabat (81,2% negatif)**[cite: 14].
+* **Model Sederhana + Tuning vs Transformer:** Pada dataset berukuran kecil (282 sampel), model TF-IDF + Logistic Regression yang dituning mengalahkan transformer (IndoBERT/IndoBERTweet) karena parameter efektifnya jauh lebih sedikit sehingga tidak mudah *under-fit*.
+* **Hybrid Grid → Bayesian** terbukti memberikan performa terbaik secara konsisten di ketiga model konvensional.
+* **Persentase Sentimen Negatif Publik:** Tingkat ketidakpuasan masyarakat paling tinggi berada pada aspek **Anggaran & Transparansi (92,7% negatif)**, **Informasi & Peringatan Dini (88,5% negatif)**, serta **Kinerja Pejabat (81,2% negatif)**.
 
 ---
 
@@ -72,15 +72,15 @@ Eksperimen menggunakan *Nested 5-Fold Cross-Validation* dengan anggaran seimbang
 
 Penelitian ini disusun untuk memenuhi Ujian Tengah Semester (UTS) Mata Kuliah Natural Language Processing (NLP)[cite: 5]:
 
-* **Mikael Ardiyanta Widyadana Purniawan**[cite: 5]
-* **Raphael Angelo Adikara Purnama**[cite: 5]
-* **Aditya Naufal Jay Putra**[cite: 5]
-* **Najwa Yasyfa Dhiya Sugina**[cite: 5]
-* **Exsalia Eka Nevita**[cite: 5]
-* **Anindhito Gading Rasunajati**[cite: 5]
+* **Mikael Ardiyanta Widyadana Purniawan**
+* **Raphael Angelo Adikara Purnama**
+* **Aditya Naufal Jay Putra**
+* **Najwa Yasyfa Dhiya Sugina**
+* **Exsalia Eka Nevita**
+* **Anindhito Gading Rasunajati**
 
 **Program Studi S1 Teknologi Sains Data**  
 Fakultas Teknologi Maju dan Multidisiplin  
-**Universitas Airlangga**[cite: 5]
+**Universitas Airlangga**
 
 ---
