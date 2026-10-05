@@ -1,21 +1,21 @@
 # Aspect-Based Sentiment Analysis (ABSA) Opini Publik terhadap Efektivitas Penanganan Bencana oleh Pemerintah Indonesia
 
-Repository ini berisi kode program, dataset, dan dokumentasi eksperimen pemodelan **Aspect-Based Sentiment Analysis (ABSA)** untuk mengkaji opini publik terhadap efektivitas penanganan bencana oleh Pemerintah Indonesia dari komentar media sosial **YouTube** dan **Instagram** dengan perbandingan **lima metode hyperparameter tuning**[cite: 5].
+Repository ini berisi kode program, dataset, dan dokumentasi eksperimen pemodelan **Aspect-Based Sentiment Analysis (ABSA)** untuk mengkaji opini publik terhadap efektivitas penanganan bencana oleh Pemerintah Indonesia dari komentar media sosial **YouTube** dan **Instagram** dengan perbandingan **lima metode hyperparameter tuning**.
 
 ---
 
 ## 📌 Ringkasan Penelitian
 
-* **Topik:** Evaluasi persepsi & opini publik terhadap penanganan bencana oleh pemerintah Indonesia[cite: 5, 6].
-* **Sumber Data:** Komentar publik dari YouTube Data API v3 dan Instagram (via Apify) pada periode Januari–September 2026[cite: 8].
-* **Pendekatan:** Aspect-Based Sentiment Analysis (ABSA) multi-head 4-kelas (TIDAK MEMBAHAS, POSITIF, NEGATIF, NETRAL)[cite: 6, 11].
-* **Hasil Terbaik:** Model **TF-IDF + Logistic Regression** dengan tuning **Hybrid Grid → Bayesian** mencapai **F1-score pasangan 0,521**[cite: 18].
+* **Topik:** Evaluasi persepsi & opini publik terhadap penanganan bencana oleh pemerintah Indonesia.
+* **Sumber Data:** Komentar publik dari YouTube Data API v3 dan Instagram (via Apify) pada periode Januari–September 2026.
+* **Pendekatan:** Aspect-Based Sentiment Analysis (ABSA) multi-head 4-kelas (TIDAK MEMBAHAS, POSITIF, NEGATIF, NETRAL).
+* **Hasil Terbaik:** Model **TF-IDF + Logistic Regression** dengan tuning **Hybrid Grid → Bayesian** mencapai **F1-score pasangan 0,521**.
 
 ---
 
 ## 🗂️ 6 Aspek Penanganan Bencana
 
-Analisis membagi evaluasi ke dalam 6 aspek utama yang divalidasi dengan *topic modeling* LDA[cite: 9, 10]:
+Analisis membagi evaluasi ke dalam 6 aspek utama yang divalidasi dengan *topic modeling* LDA:
 
 | Kode | Nama Aspek | Cakupan Utama |
 | :---: | :--- | :--- |
